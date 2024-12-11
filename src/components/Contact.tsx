@@ -31,23 +31,19 @@ export function Contact() {
 }
 
 function ContactCard({ icon, content, href }) {
-  const CardContent = () => (
-    <div className="flex flex-col items-center justify-center text-center space-y-4 p-6 rounded-lg bg-gray-900/50 hover:bg-gray-900/70 transition-colors">
-      <div className="mb-4">{icon}</div>
-      <p className="text-gray-300">{content}</p>
-    </div>
-  );
-
-  return href ? (
-    <a href={href} target="_blank" rel="noopener noreferrer" className="block hover:scale-105 transition-all transform">
-      <CardContent />
+  return (
+    <a
+      href={href}
+      className="flex flex-col items-center bg-gray-700 p-6 rounded-lg shadow-lg transform hover:scale-[1.005] hover:shadow transition-all duration-100"
+    >
+      {icon}
+      <p className="text-gray-300 mt-4 text-center">{content}</p>
     </a>
-  ) : (
-    <div className="hover:scale-105 transition-all transform">
-      <CardContent />
-    </div>
   );
 }
+
+
+
 
 function Footer() {
   return (
@@ -65,4 +61,3 @@ function Footer() {
     </footer>
   );
 }
-
