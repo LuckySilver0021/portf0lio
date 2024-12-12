@@ -27,8 +27,8 @@ const projects = [
     description: 'A robust real-time weather app with interactive forecast.',
     image: weather,
     technologies: ['React', 'OpenWeather API', 'Tailwind'],
-    github: 'https://github.com',
-    live: 'https://example.com',
+    github: 'https://github.com/LuckySilver0021/weather-app',
+    live: 'https://weatherapp0025.netlify.app/',
   },
 ];
 
